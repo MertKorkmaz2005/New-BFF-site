@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    &__ul {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 3rem;
+    }
+  
+    &__li {
+      font-size: 160%;
+      padding: 1rem;
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: #272829;
+      transition: 0.5s all;
+  
+      &:hover {
+        cursor: pointer;
+        color: #3887BE;
+      }
+    }
+  
+    &__logo {
+      width: 8rem; 
+      height: 8rem;
+      border-radius: 50%;  
+      overflow: hidden; 
+    }
+  
+    &__logoimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+    &__country{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    &__wrapper{
+       display: flex;
+       gap: 3rem;
+       padding-right: 1rem;
+    }
+  }
+  

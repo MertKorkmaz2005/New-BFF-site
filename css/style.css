@@ -1,0 +1,260 @@
+body {
+  background: #eee;
+  height: 100vh;
+}
+
+strong {
+  color: #3887BE;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+.header__li {
+  font-size: 160%;
+  padding: 1rem;
+}
+.header__link {
+  text-decoration: none;
+  color: #272829;
+  transition: 0.5s all;
+}
+.header__link:hover {
+  cursor: pointer;
+  color: #3887BE;
+}
+.header__logo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__logoimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header__country {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.header__wrapper {
+  display: flex;
+  gap: 3rem;
+  padding-right: 1rem;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.home__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home__buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50rem;
+}
+.home__arrowButton {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: 0.5s all;
+}
+.home__arrowButton:hover {
+  cursor: pointer;
+}
+.home__arrowI {
+  font-size: 180%;
+  transition: 0.3s all;
+  color: #272829;
+}
+.home__arrowI:hover {
+  cursor: pointer;
+  font-size: 210%;
+  transform: scale(1.2) rotate(-25deg);
+  color: #3887BE;
+}
+.home__arrowLink {
+  text-decoration: none;
+}
+
+.over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+.over__h2 {
+  font-size: 300%;
+}
+.over__article {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3rem;
+  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.7);
+}
+.over__article--h3 {
+  font-size: 250%;
+}
+.over__article--p {
+  font-size: 220%;
+}
+.over__textWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.over__figureImg {
+  max-width: 100%; /* Add this property to make the image scale with the container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover;
+  background-position: center center;
+}
+.over__img {
+  width: 100%;
+  height: 100%;
+}
+.over__figureWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.over__arrowLink {
+  text-decoration: none;
+  color: #191919;
+}
+.over__arrowButton {
+  display: flex;
+  width: 13rem;
+  height: 4rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: 0.5s all;
+  gap: 0.5rem;
+  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.7); /* Add a subtle box shadow */
+}
+.over__arrowButton:hover {
+  cursor: pointer;
+  background: #3887be;
+}
+.over__textBlock {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.7);
+}
+.over__title {
+  font-size: 250%;
+}
+.over__text {
+  font-size: 220%;
+}
+.over__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer {
+  margin-top: 5rem;
+  width: 100%;
+  height: 20rem;
+  background: #D8D9DA;
+  text-align: center;
+}
+
+@media screen and (max-width: 87.5rem) {
+  .over {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  .over__article {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.7);
+  }
+}
+@media screen and (max-width: 38.125rem) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__ul {
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .header__wrapper {
+    padding-right: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

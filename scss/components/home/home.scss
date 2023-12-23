@@ -1,0 +1,63 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; // Place the video behind other content
+  }
+
+  &__buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50rem;
+  }
+
+  &__arrowButton {
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: 0.5s all;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+  
+    &__arrowI {
+      font-size: 180%;
+      transition: 0.3s all;
+      color: #272829;
+  
+      &:hover {
+        cursor: pointer;
+        font-size: 210%;
+        transform: scale(1.2) rotate(-25deg);  
+        color: #3887BE;
+      }
+    }
+  
+ 
+  
+
+  &__arrowLink {
+    text-decoration: none;
+   
+  }
+}
