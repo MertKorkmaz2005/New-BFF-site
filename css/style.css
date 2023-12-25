@@ -72,6 +72,8 @@ html {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background-image: url("../img/background.jpg");
+  background-position: center center;
 }
 .home__video {
   width: 100%;
@@ -211,6 +213,24 @@ html {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.galerij {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galerij__figure {
+  margin-top: 3rem;
+  width: 30rem;
+  height: 30rem;
+}
+.galerij__img {
+  height: 100%;
+  width: 100%;
 }
 
 .footer {

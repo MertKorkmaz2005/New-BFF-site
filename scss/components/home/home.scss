@@ -3,6 +3,8 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background-image: url('../img/background.jpg');
+  background-position: center center;
 
   &__video {
     width: 100%;
